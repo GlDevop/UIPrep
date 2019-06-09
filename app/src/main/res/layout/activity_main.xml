@@ -26,22 +26,22 @@
         android:id="@+id/starLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
+        android:layout_marginStart="136dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Starscore"
-        app:srcCompat="@drawable/icn_star_gold_lg_hdpi" />
+        app:srcCompat="@drawable/icn_star_gold_lg" />
 
     <TextView
         android:id="@+id/totalScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="50%"
         android:textColor="@color/cardview_light_background"
-        android:textSize="55sp"
+        android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.009"
         app:layout_constraintStart_toEndOf="@+id/starLogo"
@@ -52,7 +52,7 @@
         android:id="@+id/divider"
         android:layout_width="fill_parent"
         android:layout_height="0.11dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="295dp"
         android:layout_marginBottom="8dp"
         android:background="#39495A"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -142,13 +142,16 @@
         app:layout_constraintVertical_bias="0.555" />
 
     <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:cardBackgroundColor="#63C0C0C0"
         app:contentPadding="0.2dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -164,32 +167,338 @@
             android:layout_height="match_parent"
             tools:visibility="visible">
 
-            <TextView
-                android:id="@+id/staticResponse"
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleBackground1"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@color/red"
+                app:civ_border_color="@color/red"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="@color/red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.461" />
+
+            <ImageView
+                android:id="@+id/responseArrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/circleBackground1"
+                app:layout_constraintEnd_toEndOf="@+id/circleBackground1"
+                app:layout_constraintStart_toStartOf="@+id/circleBackground1"
+                app:layout_constraintTop_toTopOf="@+id/circleBackground1"
+                app:srcCompat="@drawable/icn_respond_tip" />
+
+            <TextView
+                android:id="@+id/staticResponse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="120dp"
+                android:layout_marginEnd="8dp"
                 android:text="@string/improve_your_responsiveness"
                 android:textColor="@color/cardview_light_background"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/circleBackground1"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/dynResponse"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
                 android:text="@string/textview"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/staticResponse"
                 app:layout_constraintTop_toBottomOf="@+id/staticResponse"
                 app:layout_constraintVertical_bias="0.0"
                 tools:text="5 reviews awaiting response" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="1dp"
+        app:cardBackgroundColor="#63C0C0C0"
+        app:contentPadding="0.2dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2A3844" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="visible">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleBackground2"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@color/red"
+                app:civ_border_color="@color/red"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="@color/red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.384" />
+
+            <ImageView
+                android:id="@+id/bubble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/circleBackground2"
+                app:layout_constraintEnd_toEndOf="@+id/circleBackground2"
+                app:layout_constraintStart_toStartOf="@+id/circleBackground2"
+                app:layout_constraintTop_toTopOf="@+id/circleBackground2"
+                app:srcCompat="@drawable/icn_bubble" />
+
+            <TextView
+                android:id="@+id/staticMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/don_t_leave_em_hanging"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/circleBackground2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dynMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/textview"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/staticMessage"
+                app:layout_constraintTop_toBottomOf="@+id/staticMessage"
+                app:layout_constraintVertical_bias="0.0"
+                tools:text="2 new leads awating response" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="#63C0C0C0"
+        app:contentPadding="0.2dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2A3844" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="visible">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleBackground3"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@color/yellow"
+                app:civ_border_color="@color/yellow"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="@color/yellow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.384" />
+
+            <ImageView
+                android:id="@+id/reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/circleBackground3"
+                app:layout_constraintEnd_toEndOf="@+id/circleBackground3"
+                app:layout_constraintStart_toStartOf="@+id/circleBackground3"
+                app:layout_constraintTop_toTopOf="@+id/circleBackground3"
+                app:srcCompat="@drawable/icn_rar_white" />
+
+            <TextView
+                android:id="@+id/staticReview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/get_some_fresh_reviews"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/circleBackground3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/staticReview2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/request_a_review_from_a_recent_client"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/staticReview"
+                app:layout_constraintTop_toBottomOf="@+id/staticReview"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#63C0C0C0"
+        app:contentPadding="0.2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2A3844" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="visible">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleBackground4"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@color/red"
+                app:civ_border_color="@color/red"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="@color/red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.384" />
+
+            <ImageView
+                android:id="@+id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/circleBackground4"
+                app:layout_constraintEnd_toEndOf="@+id/circleBackground4"
+                app:layout_constraintStart_toStartOf="@+id/circleBackground4"
+                app:layout_constraintTop_toTopOf="@+id/circleBackground4"
+                app:srcCompat="@drawable/icn_cut_that_out" />
+
+            <TextView
+                android:id="@+id/staticStop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/avoid_damaging_activities"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/circleBackground4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/staticStop2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/don_t_submit_fake_reviews_or_try_to_force_users_to_remove_negative_ones"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/staticStop"
+                app:layout_constraintTop_toBottomOf="@+id/staticStop"
+                app:layout_constraintVertical_bias="0.0" />
 
         </android.support.constraint.ConstraintLayout>
     </android.support.v7.widget.CardView>
