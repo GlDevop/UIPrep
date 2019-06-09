@@ -66,13 +66,13 @@
         android:id="@+id/average"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="28dp"
         android:text="@string/average_rating"
         android:textColor="@color/cardview_light_background"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalScore"
         tools:text="Average Rating" />
 
     <TextView
@@ -117,30 +117,13 @@
         android:id="@+id/helpIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/divider"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/response"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/responseBar"
         app:srcCompat="@drawable/ic_info_outline_black_24dp" />
-
-    <Button
-        android:id="@+id/infoBttn"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="96dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="143dp"
-        android:text="@string/what_is_this"
-        android:textAllCaps="false"
-        android:textColor="#26A1D6"
-        android:textSize="12sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/helpIcon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/helpIcon"
-        app:layout_constraintVertical_bias="0.555" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardView"
@@ -149,10 +132,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         app:cardBackgroundColor="#63C0C0C0"
         app:contentPadding="0.2dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -161,7 +142,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#F524343F" />
+            android:background="#26323c" />
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -203,7 +184,7 @@
                 android:id="@+id/staticResponse"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="8dp"
                 android:text="@string/improve_your_responsiveness"
@@ -239,12 +220,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="1dp"
         app:cardBackgroundColor="#63C0C0C0"
         app:contentPadding="0.2dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -253,7 +232,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#F524343F" />
+            android:background="#26323c" />
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -295,7 +274,7 @@
                 android:id="@+id/staticMessage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="8dp"
                 android:text="@string/don_t_leave_em_hanging"
@@ -333,10 +312,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         app:cardBackgroundColor="#63C0C0C0"
         app:contentPadding="0.2dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -345,7 +322,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#F524343F" />
+            android:background="#26323c" />
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -387,7 +364,7 @@
                 android:id="@+id/staticReview"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="8dp"
                 android:text="@string/get_some_fresh_reviews"
@@ -421,7 +398,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:cardBackgroundColor="#63C0C0C0"
         app:contentPadding="0.2dp"
@@ -433,7 +410,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#F524343F" />
+            android:background="#26323c" />
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -475,7 +452,7 @@
                 android:id="@+id/staticStop"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="8dp"
                 android:text="@string/avoid_damaging_activities"
@@ -511,7 +488,7 @@
         android:layout_height="9dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/average"
@@ -550,6 +527,18 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/repBar"
         app:layout_constraintTop_toBottomOf="@+id/repBar" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="@string/what_is_this"
+        android:textColor="@color/blue"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/helpIcon"
+        app:layout_constraintStart_toEndOf="@+id/helpIcon"
+        app:layout_constraintTop_toTopOf="@+id/helpIcon" />
 
 
 </android.support.constraint.ConstraintLayout>
