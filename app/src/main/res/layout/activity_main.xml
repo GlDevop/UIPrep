@@ -5,7 +5,7 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1E2B35"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/starscore"
         android:textColor="@color/cardview_light_background"
@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Starscore"
         app:srcCompat="@drawable/icn_star_gold_lg" />
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/textview"
         android:textColor="@color/cardview_light_background"
@@ -52,7 +52,7 @@
         android:id="@+id/divider"
         android:layout_width="fill_parent"
         android:layout_height="0.11dp"
-        android:layout_marginTop="275dp"
+        android:layout_marginTop="285dp"
         android:layout_marginBottom="8dp"
         android:background="#39495A"
         app:layout_constraintBottom_toBottomOf="parent"
