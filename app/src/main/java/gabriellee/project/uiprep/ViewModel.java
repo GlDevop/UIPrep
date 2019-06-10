@@ -11,7 +11,7 @@ public class ViewModel extends AndroidViewModel {
     //Creating response object
     public ViewModel(@NonNull Application application) {
         super(application);
-        response = new Response(90,55, 40, 30, 6, 3, 55);
+        response = new Response(90,55, 40, 30, 5, 2, 50);
     }
 
     //Returning values from the response object
