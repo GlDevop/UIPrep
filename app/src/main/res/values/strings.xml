@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">UIPrep</string>
     <string name="starscore">StarScore</string>
-    <string name="what_is_this">What is this?</string>
+    <string name="what_is_this"> What is this?</string>
     <string name="improve_your_responsiveness">Improve your responsiveness</string>
     <string name="textview">TextView</string>
     <string name="average_rating">Average Rating</string>
@@ -13,4 +13,7 @@
     <string name="request_a_review_from_a_recent_client">Request a review from a recent client</string>
     <string name="avoid_damaging_activities">Avoid damaging activities</string>
     <string name="don_t_submit_fake_reviews_or_try_to_force_users_to_remove_negative_ones">Don\'t submit fake reviews or try to force users to remove negative ones.</string>
+    <string name="dynResponse">%1$d reviews awaiting response</string>
+    <string name="dynMessage">%1$d new leads awaiting response</string>
+    <string name="score">%1$d%%</string>
 </resources>

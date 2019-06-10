@@ -2,6 +2,7 @@ package gabriellee.project.uiprep;
 
 import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private ViewModel viewmodel;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +32,14 @@ public class MainActivity extends AppCompatActivity {
         ProgressBar respBar = findViewById(R.id.responseBar);
 
         //Setting TextViews
-        score.setText(String.format("%d%%", viewmodel.getStarScore()));
-        response.setText(String.format("%d reviews awaiting response", viewmodel.getNumReviews()));
-        message.setText(String.format("%d new leads awaiting response", viewmodel.getNumLeads()));
+        Resources res = getResources();
+        String sText = String.format(res.getString(R.string.score), viewmodel.getStarScore());
+        String mText = String.format(res.getString(R.string.dynMessage), viewmodel.getNumLeads());
+        String rText = String.format(res.getString(R.string.dynResponse), viewmodel.getNumReviews());
+        score.setText(sText);
+        response.setText(rText);
+        message.setText(mText);
+
 
         //Setting Progress bars
         averageBar.setProgress(viewmodel.getAverage());
