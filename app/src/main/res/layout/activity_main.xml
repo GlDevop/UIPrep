@@ -468,7 +468,6 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/average"
             app:layout_constraintTop_toBottomOf="@+id/totalScore" />
 
@@ -480,7 +479,6 @@
             android:layout_height="9dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="@+id/averageBar"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/averageBar"
             app:layout_constraintTop_toBottomOf="@+id/averageBar" />
 
@@ -491,7 +489,6 @@
             android:layout_height="9dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="@+id/reviewBar"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/reviewBar"
             app:layout_constraintTop_toBottomOf="@+id/reviewBar" />
 
@@ -502,7 +499,6 @@
             android:layout_height="9dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="@+id/repBar"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/repBar"
             app:layout_constraintTop_toBottomOf="@+id/repBar" />
 
