@@ -3,6 +3,11 @@
     <color name="colorPrimary">#8A8484</color>
     <color name="colorPrimaryDark">#3D3F3D</color>
     <color name="colorAccent">#929292</color>
-    <color name="background">#202c37</color>
+    <color name="background">#1c2833</color>
     <color name="cardBackground">#2D3D49</color>
+    <color name="red">#e03131</color>
+    <color name="yellow">#fcc419</color>
+    <color name="green">#40c057</color>
+    <color name="backgroundBar">#1B2530</color>
+    <color name="blue">#27a9e1</color>
 </resources>

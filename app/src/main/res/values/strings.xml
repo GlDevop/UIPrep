@@ -8,4 +8,9 @@
     <string name="review_recency">Review Recency</string>
     <string name="reputation">Reputation</string>
     <string name="responsiveness">Responsiveness</string>
+    <string name="get_some_fresh_reviews">Get some fresh reviews</string>
+    <string name="don_t_leave_em_hanging">Don\'t leave \'em hanging!</string>
+    <string name="request_a_review_from_a_recent_client">Request a review from a recent client</string>
+    <string name="avoid_damaging_activities">Avoid damaging activities</string>
+    <string name="don_t_submit_fake_reviews_or_try_to_force_users_to_remove_negative_ones">Don\'t submit fake reviews or try to force users to remove negative ones.</string>
 </resources>
