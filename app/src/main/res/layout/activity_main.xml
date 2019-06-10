@@ -155,26 +155,24 @@
                         android:background="#26323c"
                         tools:visibility="visible">
 
-
-                        <de.hdodenhof.circleimageview.CircleImageView
+                        <ImageView
                             android:id="@+id/circleBackground1"
-                            android:layout_width="50sp"
-                            android:layout_height="50sp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_margin="10dp"
-                            android:layout_marginStart="28dp"
+                            android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="8dp"
                             android:layout_marginBottom="8dp"
-                            android:src="@color/red"
-                            app:civ_border_color="@color/red"
-                            app:civ_border_width="2dp"
-                            app:civ_circle_background_color="@color/red"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.461" />
+                            app:layout_constraintVertical_bias="0.461"
+                            app:srcCompat="@drawable/circle" />
+
+
 
                         <ImageView
                             android:id="@+id/responseArrow"
@@ -235,25 +233,23 @@
                         android:background="#26323c">
 
 
-                        <de.hdodenhof.circleimageview.CircleImageView
+                        <ImageView
                             android:id="@+id/circleBackground2"
-                            android:layout_width="50sp"
-                            android:layout_height="50sp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_margin="10dp"
-                            android:layout_marginStart="28dp"
+                            android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="8dp"
                             android:layout_marginBottom="8dp"
-                            android:src="@color/red"
-                            app:civ_border_color="@color/red"
-                            app:civ_border_width="2dp"
-                            app:civ_circle_background_color="@color/red"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.461" />
+                            app:layout_constraintVertical_bias="0.461"
+                            app:srcCompat="@drawable/circle" />
+
 
                         <ImageView
                             android:id="@+id/bubble"
@@ -315,25 +311,23 @@
                         android:background="#26323c">
 
 
-                        <de.hdodenhof.circleimageview.CircleImageView
+                        <ImageView
                             android:id="@+id/circleBackground3"
-                            android:layout_width="50sp"
-                            android:layout_height="50sp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_margin="10dp"
-                            android:layout_marginStart="28dp"
+                            android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="8dp"
                             android:layout_marginBottom="8dp"
-                            android:src="@color/yellow"
-                            app:civ_border_color="@color/yellow"
-                            app:civ_border_width="2dp"
-                            app:civ_circle_background_color="@color/yellow"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.461" />
+                            app:layout_constraintVertical_bias="0.461"
+                            app:srcCompat="@drawable/circle2" />
+
 
                         <ImageView
                             android:id="@+id/reviews"
@@ -393,26 +387,23 @@
                         tools:visibility="visible"
                         android:background="#26323c">
 
-
-                        <de.hdodenhof.circleimageview.CircleImageView
+                        <ImageView
                             android:id="@+id/circleBackground4"
-                            android:layout_width="50sp"
-                            android:layout_height="50sp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_margin="10dp"
-                            android:layout_marginStart="28dp"
+                            android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="8dp"
                             android:layout_marginBottom="8dp"
-                            android:src="@color/red"
-                            app:civ_border_color="@color/red"
-                            app:civ_border_width="2dp"
-                            app:civ_circle_background_color="@color/red"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.461" />
+                            app:layout_constraintVertical_bias="0.461"
+                            app:srcCompat="@drawable/circle" />
+
 
                         <ImageView
                             android:id="@+id/stop"
@@ -501,6 +492,9 @@
             app:layout_constraintEnd_toEndOf="@+id/repBar"
             app:layout_constraintStart_toStartOf="@+id/repBar"
             app:layout_constraintTop_toBottomOf="@+id/repBar" />
+
+
+
 
     </android.support.constraint.ConstraintLayout>
 </layout>
