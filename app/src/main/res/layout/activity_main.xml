@@ -157,6 +157,7 @@
 
                         <ImageView
                             android:id="@+id/circleBackground1"
+                            android:contentDescription="@null"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_margin="10dp"
@@ -182,7 +183,8 @@
                             app:layout_constraintEnd_toEndOf="@+id/circleBackground1"
                             app:layout_constraintStart_toStartOf="@+id/circleBackground1"
                             app:layout_constraintTop_toTopOf="@+id/circleBackground1"
-                            app:srcCompat="@drawable/icn_respond_tip" />
+                            app:srcCompat="@drawable/icn_respond_tip"
+                            android:contentDescription="@string/improve_your_responsiveness" />
 
                         <TextView
                             android:id="@+id/staticResponse"
@@ -235,6 +237,7 @@
 
                         <ImageView
                             android:id="@+id/circleBackground2"
+                            android:contentDescription="@null"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_margin="10dp"
@@ -259,7 +262,8 @@
                             app:layout_constraintEnd_toEndOf="@+id/circleBackground2"
                             app:layout_constraintStart_toStartOf="@+id/circleBackground2"
                             app:layout_constraintTop_toTopOf="@+id/circleBackground2"
-                            app:srcCompat="@drawable/icn_bubble" />
+                            app:srcCompat="@drawable/icn_bubble"
+                            android:contentDescription="@string/don_t_leave_em_hanging" />
 
                         <TextView
                             android:id="@+id/staticMessage"
@@ -313,6 +317,7 @@
 
                         <ImageView
                             android:id="@+id/circleBackground3"
+                            android:contentDescription="@null"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_margin="10dp"
@@ -337,7 +342,8 @@
                             app:layout_constraintEnd_toEndOf="@+id/circleBackground3"
                             app:layout_constraintStart_toStartOf="@+id/circleBackground3"
                             app:layout_constraintTop_toTopOf="@+id/circleBackground3"
-                            app:srcCompat="@drawable/icn_rar_white" />
+                            app:srcCompat="@drawable/icn_rar_white"
+                            android:contentDescription="@string/get_some_fresh_reviews" />
 
                         <TextView
                             android:id="@+id/staticReview"
@@ -389,6 +395,7 @@
 
                         <ImageView
                             android:id="@+id/circleBackground4"
+                            android:contentDescription="@null"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_margin="10dp"
@@ -413,7 +420,8 @@
                             app:layout_constraintEnd_toEndOf="@+id/circleBackground4"
                             app:layout_constraintStart_toStartOf="@+id/circleBackground4"
                             app:layout_constraintTop_toTopOf="@+id/circleBackground4"
-                            app:srcCompat="@drawable/icn_cut_that_out" />
+                            app:srcCompat="@drawable/icn_cut_that_out"
+                            android:contentDescription="@string/avoid_damaging_activities" />
 
                         <TextView
                             android:id="@+id/staticStop"
