@@ -1,14 +1,11 @@
 package gabriellee.project.uiprep;
 
-import android.arch.lifecycle.ViewModelProvider;
+
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.res.Resources;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import gabriellee.project.uiprep.databinding.ActivityMainBinding;
 

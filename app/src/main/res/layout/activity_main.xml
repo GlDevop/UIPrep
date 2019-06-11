@@ -11,7 +11,7 @@
         tools:context=".MainActivity">
 
         <TextView
-            android:id="@+id/Starscore"
+            android:id="@+id/mainTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -39,7 +39,7 @@
             android:textSize="50sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Starscore"
+            app:layout_constraintTop_toBottomOf="@+id/mainTitle"
             tools:text="50%" />
 
         <TextView
@@ -73,7 +73,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/average"
+            android:id="@+id/avgText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
@@ -86,7 +86,7 @@
             tools:text="Average Rating" />
 
         <TextView
-            android:id="@+id/review"
+            android:id="@+id/revText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -94,33 +94,33 @@
             android:text="@string/review_recency"
             android:textColor="@color/cardview_light_background"
             android:textSize="12sp"
-            app:layout_constraintBottom_toTopOf="@+id/reputation"
-            app:layout_constraintEnd_toEndOf="@+id/average"
-            app:layout_constraintTop_toBottomOf="@+id/average"
+            app:layout_constraintBottom_toTopOf="@+id/repText"
+            app:layout_constraintEnd_toEndOf="@+id/avgText"
+            app:layout_constraintTop_toBottomOf="@+id/avgText"
             tools:text="Review Recency" />
 
         <TextView
-            android:id="@+id/reputation"
+            android:id="@+id/repText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/reputation"
             android:textColor="@color/cardview_light_background"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@+id/review"
-            app:layout_constraintTop_toBottomOf="@+id/review"
+            app:layout_constraintEnd_toEndOf="@+id/revText"
+            app:layout_constraintTop_toBottomOf="@+id/revText"
             tools:text="Reputation" />
 
         <TextView
-            android:id="@+id/response"
+            android:id="@+id/respText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/responsiveness"
             android:textColor="@color/cardview_light_background"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@+id/reputation"
-            app:layout_constraintTop_toBottomOf="@+id/reputation"
+            app:layout_constraintEnd_toEndOf="@+id/repText"
+            app:layout_constraintTop_toBottomOf="@+id/repText"
             tools:text="Responsiveness" />
 
 
@@ -175,7 +175,7 @@
 
 
                         <ImageView
-                            android:id="@+id/responseArrow"
+                            android:id="@+id/respImg"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:layout_constraintBottom_toBottomOf="@+id/circleBackground1"
@@ -188,7 +188,7 @@
                             android:id="@+id/staticResponse"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
+                            android:layout_marginStart="12dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="8dp"
                             android:text="@string/improve_your_responsiveness"
@@ -202,7 +202,7 @@
                             android:id="@+id/dynResponse"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:layout_marginEnd="8dp"
                             android:text="@string/dynResponse"
                             android:textColor="@color/cardview_light_background"
@@ -252,7 +252,7 @@
 
 
                         <ImageView
-                            android:id="@+id/bubble"
+                            android:id="@+id/bubbleImg"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:layout_constraintBottom_toBottomOf="@+id/circleBackground2"
@@ -265,7 +265,7 @@
                             android:id="@+id/staticMessage"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
+                            android:layout_marginStart="12dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="8dp"
                             android:text="@string/don_t_leave_em_hanging"
@@ -279,7 +279,7 @@
                             android:id="@+id/dynMessage"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:layout_marginEnd="8dp"
                             android:text="@string/dynMessage"
                             android:textColor="@color/cardview_light_background"
@@ -330,7 +330,7 @@
 
 
                         <ImageView
-                            android:id="@+id/reviews"
+                            android:id="@+id/revImg"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:layout_constraintBottom_toBottomOf="@+id/circleBackground3"
@@ -343,7 +343,7 @@
                             android:id="@+id/staticReview"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
+                            android:layout_marginStart="12dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="8dp"
                             android:text="@string/get_some_fresh_reviews"
@@ -357,7 +357,7 @@
                             android:id="@+id/staticReview2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:layout_marginEnd="8dp"
                             android:text="@string/request_a_review_from_a_recent_client"
                             android:textColor="@color/cardview_light_background"
@@ -406,7 +406,7 @@
 
 
                         <ImageView
-                            android:id="@+id/stop"
+                            android:id="@+id/stopImg"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:layout_constraintBottom_toBottomOf="@+id/circleBackground4"
@@ -419,7 +419,7 @@
                             android:id="@+id/staticStop"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
+                            android:layout_marginStart="12dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="8dp"
                             android:text="@string/avoid_damaging_activities"
@@ -433,9 +433,9 @@
                             android:id="@+id/staticStop2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:layout_marginEnd="8dp"
-                            android:text="@string/don_t_submit_fake_reviews_or_try_to_force_users_to_remove_negative_ones"
+                            android:text="@string/tip4"
                             android:textColor="@color/cardview_light_background"
                             android:textSize="12sp"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -459,7 +459,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/average"
+            app:layout_constraintStart_toEndOf="@+id/avgText"
             app:layout_constraintTop_toBottomOf="@+id/totalScore" />
 
 
