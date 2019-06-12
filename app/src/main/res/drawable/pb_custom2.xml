@@ -6,7 +6,7 @@
             android:tint="?attr/colorControlNormal">
             <corners android:radius="8dp"/>
             <size android:height="10dp" />
-            <solid android:color="#90caf9" />
+            <solid android:color="?attr/colorControlNormal" />
         </shape>
     </item>
 
