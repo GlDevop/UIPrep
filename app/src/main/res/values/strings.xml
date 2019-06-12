@@ -11,7 +11,7 @@
     <string name="don_t_leave_em_hanging">Don\'t leave \'em hanging!</string>
     <string name="request_a_review_from_a_recent_client">Request a review from a recent client</string>
     <string name="avoid_damaging_activities">Avoid damaging activities</string>
-    <string name="tip4">Don\'t submit fake reviews or try to force users to remove negative ones.</string>
+    <string name="avoidtip">Don\'t submit fake reviews or try to force users to remove negative ones.</string>
     <string name="dynResponse">%1$d reviews awaiting response</string>
     <string name="dynMessage">%1$d new leads awaiting response</string>
     <string name="score">%1$d%%</string>

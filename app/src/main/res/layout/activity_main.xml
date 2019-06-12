@@ -64,7 +64,7 @@
             android:layout_height="0.11dp"
             android:layout_marginTop="285dp"
             android:layout_marginBottom="8dp"
-            android:background="#39495A"
+            android:background="@color/divideColor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -145,14 +145,14 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    app:cardBackgroundColor="#63C0C0C0"
+                    app:cardBackgroundColor="@color/cardBackground"
                     app:contentPadding="0.2dp">
 
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#26323c"
+                        android:background="@color/cardBackgroundOverlay"
                         tools:visibility="visible">
 
                         <ImageView
@@ -224,7 +224,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    app:cardBackgroundColor="#63C0C0C0"
+                    app:cardBackgroundColor="@color/cardBackground"
                     app:contentPadding="0.2dp">
 
 
@@ -232,7 +232,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         tools:visibility="visible"
-                        android:background="#26323c">
+                        android:background="@color/cardBackgroundOverlay">
 
 
                         <ImageView
@@ -304,7 +304,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    app:cardBackgroundColor="#63C0C0C0"
+                    app:cardBackgroundColor="@color/cardBackground"
                     app:contentPadding="0.2dp">
 
 
@@ -312,7 +312,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         tools:visibility="visible"
-                        android:background="#26323c">
+                        android:background="@color/cardBackgroundOverlay">
 
 
                         <ImageView
@@ -383,7 +383,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    app:cardBackgroundColor="#63C0C0C0"
+                    app:cardBackgroundColor="@color/cardBackground"
                     app:contentPadding="0.2dp">
 
 
@@ -391,7 +391,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         tools:visibility="visible"
-                        android:background="#26323c">
+                        android:background="@color/cardBackgroundOverlay">
 
                         <ImageView
                             android:id="@+id/circleBackground4"
@@ -443,7 +443,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:layout_marginEnd="8dp"
-                            android:text="@string/tip4"
+                            android:text="@string/avoidtip"
                             android:textColor="@color/cardview_light_background"
                             android:textSize="12sp"
                             app:layout_constraintEnd_toEndOf="parent"
